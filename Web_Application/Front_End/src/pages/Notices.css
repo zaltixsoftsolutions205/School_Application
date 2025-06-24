@@ -1,0 +1,138 @@
+.notice-container {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: 250px;
+}
+
+.notice-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.notice-textarea {
+  padding: 1rem;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.notice-upload-btn {
+  width: 80px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.notice-upload-btn:hover {
+  background-color: #357ac9;
+}
+
+.notice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.notice-card {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notice-content {
+  font-size: 16px;
+  color: #333;
+  word-wrap: break-word;
+}
+
+.notice-date {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.notice-delete-btn {
+  margin-top: 10px;
+  background-color: #e74c3c;
+  width: 50px;
+  color: white;
+  border: none;
+  padding: 5px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.notice-delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* 🔹 Media Queries */
+
+/* 📱 481px - 768px */
+@media (max-width: 768px) and (min-width: 481px) {
+  
+
+  .notice-textarea {
+    font-size: 15px;
+  }
+
+  .notice-upload-btn {
+    
+    padding:6px 6px;
+  }
+
+  .notice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 💻 769px - 1024px */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* .notice-container {
+    padding: 2rem 1.5rem;
+  } */
+
+  .notice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 🖥️ 1025px - 1280px */
+@media (max-width: 1280px) and (min-width: 1025px) {
+  /* .notice-container {
+    padding: 2.5rem;
+  } */
+
+  .notice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 🖥️ 1281px and above */
+@media (min-width: 1281px) {
+  /* .notice-container {
+    padding: 3rem;
+    max-width: 1000px;
+  } */
+
+  .notice-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

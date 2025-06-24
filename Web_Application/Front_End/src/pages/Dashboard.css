@@ -1,0 +1,106 @@
+.dashboard {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 40px;
+   margin-left: 250px;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.card h3{
+  color:black;
+}
+
+.card p{
+  color: black ;
+}
+.card .icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+
+.icon.blue { color: #3b82f6; }
+.icon.green { color: #10b981; }
+.icon.red { color: #ef4444; }
+.icon.purple { color: #8b5cf6; }
+
+.count {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.info.green { color: #10b981; }
+.info.red { color: #ef4444; }
+.info.purple { color: #8b5cf6; }
+
+.lower-section {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.attendance-trend,
+.recent-activities {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.chart-placeholder {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.recent-activities ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-activities li {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.blue { background: #3b82f6; }
+.dot.green { background: #10b981; }
+.dot.yellow { background: #facc15; }
+.dot.purple { background: #8b5cf6; }
+.dot.gray { background: #9ca3af; }

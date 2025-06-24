@@ -1,0 +1,250 @@
+.fees-container {
+  padding: 20px;
+  margin-top: 50px;
+  font-family: sans-serif;
+  margin-left: 250px;
+}
+
+.fees-container h2 {
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+}
+
+.card.green { background: #27ae60; }
+.card.yellow { background: #f1c40f; }
+.card.blue { background: #2980b9; }
+.card.red { background: #e74c3c; }
+
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.actions input {
+  flex: 2;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.actions select,
+.actions .add,
+.actions .export {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.actions .add {
+  background: #3366ff;
+  color: white;
+}
+
+.actions .export {
+  background: #444;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+td .avatar {
+  background: #007bff;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+td.green {
+  color: #27ae60;
+}
+
+td.red {
+  color: #e74c3c;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+}
+
+.status.paid {
+  background-color: #2ecc71;
+}
+
+.status.pending {
+  background-color: #f1c40f;
+  color: #000;
+}
+
+.status.overdue {
+  background-color: #e74c3c;
+}
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.pagination button {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 🔹 481px - 768px (Small Tablets / Landscape Phones) */
+@media (max-width: 768px) and (min-width: 481px) {
+  .summary {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  td {
+    text-align: left;
+    padding-left: 40%;
+    position: relative;
+  }
+
+  td::before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 30%;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+  }
+
+  td:nth-child(1)::before { content: "Student Details"; }
+  td:nth-child(2)::before { content: "Total Fee"; }
+  td:nth-child(3)::before { content: "Paid"; }
+  td:nth-child(4)::before { content: "Pending"; }
+  td:nth-child(5)::before { content: "Status"; }
+  td:nth-child(6)::before { content: "Receipt"; }
+}
+
+/* 🔹 769px - 1024px (Large Tablets) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .summary {
+    flex-wrap: wrap;
+  }
+
+  .actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .actions input {
+    flex: 1;
+  }
+
+  .student-info {
+    flex-direction: row;
+    gap: 8px;
+  }
+}
+
+/* 🔹 1025px - 1280px (Small Laptops) */
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .summary {
+    gap: 15px;
+  }
+
+  .actions {
+    gap: 10px;
+  }
+}
+
+/* 🔹 1281px and above (Desktops) */
+@media (min-width: 1281px) {
+  .fees-container {
+    padding: 30px 40px;
+  }
+
+  .summary {
+    gap: 30px;
+  }
+
+  .card {
+    min-width: 240px;
+  }
+
+  .actions input {
+    max-width: 350px;
+  }
+}

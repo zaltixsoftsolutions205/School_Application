@@ -1,0 +1,48 @@
+.app {
+  display: flex;
+  font-family: sans-serif;
+}
+
+.dashboard {
+  padding: 20px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  flex: 1;
+}
+
+.card.blue { border-left: 5px solid #3b82f6; }
+.card.green { border-left: 5px solid #10b981; }
+.card.red { border-left: 5px solid #ef4444; }
+.card.purple { border-left: 5px solid #8b5cf6; }
+
+.bottom-section {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.attendance-trend, .activities {
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.chart-placeholder {
+  background: #f3f4f6;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9ca3af;
+}

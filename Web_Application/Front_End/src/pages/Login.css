@@ -1,0 +1,127 @@
+.login-container {
+  display: flex;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  width: 700px; /* Reduced from 900px */
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.login-left {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.login-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-right {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h2 {
+  color: #6c63ff;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-group input {
+  width: 100%;
+  max-width: 350px; /* ✅ Limit input width */
+  padding: 12px 40px 12px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 18px;
+  color: #999;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px auto 20px;
+  max-width: 350px;
+}
+
+.options a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.login-button {
+  width: 100%;
+  max-width: 350px; /* ✅ Consistent width */
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #6c63ff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #574ede;
+}
+
+/* ✅ Responsive for tablets and mobile */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .login-right {
+    border-radius: 0 0 20px 20px;
+    padding: 30px;
+  }
+
+  .login-left,
+  .login-right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .input-group input,
+  .login-button,
+  .options {
+    max-width: 100%;
+  }
+}
