@@ -45,41 +45,53 @@ Make sure the following software and tools are installed:
 
 ### 🌐 Web Application
 
-> Open **two terminals** and run the following commands:
+Open **two terminals** and run the following commands:
 
 **1️⃣ Start the frontend:**
 cd Web_Application/Front_End
+
 npm install
+
 npm start
 
 
 **2️⃣ Start the backend server:**
 cd Web_Application/Back_End
+
 npm install
+
 node server.js
 
 
-###📱 Mobile Application
+📱 Mobile Application
 Open three terminals (VS Code or CMD), and navigate as per below:
-**1️⃣ Start the mobile frontEnd:
+1️⃣ Start the mobile frontEnd:
 cd Mob_Application/Frontend
+
 npm install
+
 npx react-native run-android
 
-**2️⃣Launch the Metro bundler (emulator):
+2️⃣Launch the Metro bundler (emulator):
 cd Mob_Application/Frontend
+
 npx react-native start
 
-**3️⃣ Start the backend server:
+3️⃣ Start the backend server:
 cd Mob_Application/Backend
+
 npm install
+
 node server.js
 
 🗃️ Database Setup
 Import the school_database.sql file into your MySQL server.
 
+
 ✅ Output & Access
 Web App will run on: http://localhost:3000
+
 Backend API: http://localhost:5000
+
 Mobile App will open in emulator or connected Android device.
 
